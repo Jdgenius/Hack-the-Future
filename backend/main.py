@@ -1,8 +1,11 @@
 import os
 import json
 import base64
+import google.api_core.exceptions
 import google.generativeai as genai
 
+
+import PIL.Image
 
 def receive_prompt():
     #Block until Figma API sends data over, and receive the prompt data (and an image if there is one)
@@ -20,6 +23,8 @@ def process_prompt(obj, File):
     script_path = os.path.dirname(os.path.abspath(__file__))
     filepath = os.path.join(script_path, "images", File)
 
+    image = PIL.Image.open(filepath)
+
     #Processing Prompt
 
     #Sending to Gemini
@@ -27,9 +32,8 @@ def process_prompt(obj, File):
     genai.configure(api_key="AIzaSyDAPW9X8Sp6Si6Um0fW7INNkpdvdPc88ps")
 
     try:
-        model = genai.GenerativeModel('gemini-pro-vision')
-        img = ImagePart.from_file(filepath, mime_type="image/jpeg") # or "image/png"
-        response = model.generate_content([prompt, img])
+        model = genai.GenerativeModel("gemini-2.0-flash")
+        response = model.generate_content([prompt, image])
         print(response.text)
 
     except FileNotFoundError:
@@ -41,12 +45,13 @@ def process_prompt(obj, File):
     except Exception as generic_exception:
         print(f"An unexpected error occurred: {generic_exception}")
         return None 
+    
+    
 
+    #Format response into a object and return the object
+    obj["Data"] = response.text
 
-    #API call to Gemini with modified prompt and data in correct format
-
-    #Format response into a JSON to send back
-    return original_object
+    return obj
 
 def send_response(original_object, response):
     return 
