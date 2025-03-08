@@ -8,7 +8,7 @@ GEMINI_API_KEY = "AIzaSyBzIyq33V7Wwi4ke2b4Qf7xeqz01ON48LQ"
 def generate(prompt_text, image_path):
     
     with open(image_path, "rb") as image_file:
-        image_bytes = image_file.read()
+            image_bytes = image_file.read()
     
     client = genai.Client(
         api_key=os.environ.get("GEMINI_API_KEY"),
@@ -20,7 +20,6 @@ def generate(prompt_text, image_path):
             role="user",
             parts=[
                 types.Part.from_text(text=prompt_text),
-                types.Part.from_image(data=image_bytes),
             ],
         ),
     ]
@@ -201,6 +200,9 @@ Edit
         config=generate_content_config,
     ):
         print(chunk.text, end="")
+    
+    response = client.models.generate_content(model=model, contents=contents, config=generate_content_config)
+    return response.text
 
 if __name__ == "__main__":
     generate()
