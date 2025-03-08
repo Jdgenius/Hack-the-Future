@@ -1,6 +1,6 @@
 {
     "Type": "Figma to Backend",
-    "Prompt": "What bird is this?",
+    "Prompt": "Output a one-line no semicolon comma separated list of the raw materials in the packaging, and a metric with units of how much was used, give the best possible estimate, or 0 if negligible. One entry per material, commas between material and metric",
     "Response": "",
     "Data": "",
     "File Type": "jpeg"
