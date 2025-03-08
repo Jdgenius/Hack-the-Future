@@ -3,55 +3,52 @@ import json
 import base64
 import google.api_core.exceptions
 import google.generativeai as genai
-
-
 import PIL.Image
+from backend.receiver import receive_prompt
+from backend.gemini_api import generate
+
 
 def receive_prompt():
     #Block until Figma API sends data over, and receive the prompt data (and an image if there is one)
     return 
 
-def process_prompt(obj, File):
 
-    #Reading data from sent object
-    type = obj["Type"]
-    
-    prompt = obj["Prompt"]
-   
+def process_prompt(obj, file_name):
+    """
+    Processes the received prompt and image file.
+    """
 
-    #Fetching path of image
+    # Get prompt data
+    prompt_text = obj.get("Prompt", "Default analysis request.")
+
+    # Construct image file path
     script_path = os.path.dirname(os.path.abspath(__file__))
-    filepath = os.path.join(script_path, "images", File)
+    images_path = os.path.join(script_path, "..", "images")
+    file_path = os.path.join(images_path, file_name)
 
-    image = PIL.Image.open(filepath)
-
-    #Processing Prompt
-
-    #Sending to Gemini
-
-    genai.configure(api_key="AIzaSyDAPW9X8Sp6Si6Um0fW7INNkpdvdPc88ps")
-
-    try:
-        model = genai.GenerativeModel("gemini-2.0-flash")
-        response = model.generate_content([prompt, image])
-        print(response.text)
-
-    except FileNotFoundError:
-        print(f"Error: Image file not found at {filepath}")
+    # Validate image file
+    if not os.path.exists(file_path):
+        print(f"Error: Image file not found at {file_path}")
         return None
-    except google.api_core.exceptions.GoogleAPIError as e:
-        print(f"Error calling Gemini API: {e}")
+
+    # Load image
+    image = PIL.Image.open(file_path)
+
+    # Call Gemini AI
+    ai_response = generate(prompt_text, image)
+
+    # Format response
+    if ai_response:
+        try:
+            structured_response = json.loads(ai_response)  # Ensure valid JSON
+        except json.JSONDecodeError:
+            print("Error: AI response is not valid JSON. Returning raw response.")
+            structured_response = {"raw_response": ai_response}
+
+        obj["Data"] = structured_response
+        return obj
+    else:
         return None
-    except Exception as generic_exception:
-        print(f"An unexpected error occurred: {generic_exception}")
-        return None 
-    
-    
-
-    #Format response into a object and return the object
-    obj["Data"] = response.text
-
-    return obj
 
 def send_response(original_object, response):
     return 
