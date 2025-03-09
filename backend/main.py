@@ -58,7 +58,7 @@ def process_prompt(obj, File):
 
     #Finding List of Materials
 
-    genai.configure(api_key="AIzaSyDAPW9X8Sp6Si6Um0fW7INNkpdvdPc88ps")
+    genai.configure(api_key="GEMINI_AI_KEY")
 
     response_list = call_gemini(prompt, image)
     
