@@ -1,0 +1,85 @@
+{
+    "returns": [
+        {
+            "product_id": "ALU001",
+            "name": "Aluminum Can",
+            "reason": "Recycling Process",
+            "condition": "Used",
+            "packaging_materials": ["Aluminum"],
+            "materials": {
+                "Aluminum": 100
+            },
+            "price_per_pound": 1.5,
+            "weight": 0.5,
+            "yearly_sales": 50000,
+            "recyclability_percentage": 90.0,
+            "estimated_savings": 16875.0,
+            "action": "Recycle and resell"
+        },
+        {
+            "product_id": "PLB002",
+            "name": "Plastic Bottle",
+            "reason": "Recycling Process",
+            "condition": "Used",
+            "packaging_materials": ["PET Plastic", "Other Plastic"],
+            "materials": {
+                "PET Plastic": 80,
+                "Other Plastic": 20
+            },
+            "price_per_pound": 0.9,
+            "weight": 0.3,
+            "yearly_sales": 80000,
+            "recyclability_percentage": 42.0,
+            "estimated_savings": 4536.0,
+            "action": "Sort and recycle"
+        },
+        {
+            "product_id": "CAR003",
+            "name": "Cardboard Box",
+            "reason": "Recycling Process",
+            "condition": "Used",
+            "packaging_materials": ["Cardboard"],
+            "materials": {
+                "Cardboard": 100
+            },
+            "price_per_pound": 0.6,
+            "weight": 1.2,
+            "yearly_sales": 30000,
+            "recyclability_percentage": 80.0,
+            "estimated_savings": 8640.0,
+            "action": "Reuse or recycle"
+        },
+        {
+            "product_id": "GLJ004",
+            "name": "Glass Jar",
+            "reason": "Recycling Process",
+            "condition": "Used",
+            "packaging_materials": ["Glass"],
+            "materials": {
+                "Glass": 100
+            },
+            "price_per_pound": 2.0,
+            "weight": 1.5,
+            "yearly_sales": 20000,
+            "recyclability_percentage": 70.0,
+            "estimated_savings": 21000.0,
+            "action": "Recycle and remanufacture"
+        },
+        {
+            "product_id": "STE005",
+            "name": "Steel Can",
+            "reason": "Recycling Process",
+            "condition": "Used",
+            "packaging_materials": ["Steel"],
+            "materials": {
+                "Steel": 100
+            },
+            "price_per_pound": 1.8,
+            "weight": 0.7,
+            "yearly_sales": 40000,
+            "recyclability_percentage": 85.0,
+            "estimated_savings": 21420.0,
+            "action": "Recycle and reuse"
+        }
+    ]
+}
