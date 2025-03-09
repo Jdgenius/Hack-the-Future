@@ -1,0 +1,62 @@
+{
+    "total_savings": 15.0,
+    "total_original_costs": 95550.0,
+    "savings_percentage": 0.015698587127158554,
+    "detailed_results": [
+        {
+            "Product ID": "ALU001",
+            "Name": "Aluminum Can",
+            "Recyclability (%)": 90.0,
+            "Yearly Sales": 50000,
+            "Weight (lbs)": 0.5,
+            "Price per Pound ($)": 1.5,
+            "AI Estimated Savings (6 Months) ($)": 1.0,
+            "Savings Percentage (%)": 0.01,
+            "AI Response": "## Aluminum Can (ALU001) Recycling Savings Estimate (6 Months)\n\n**Product Data:**\n\n* ID: ALU001\n* Recyclability Rate: 90%\n* Annual Sales: 50,000 units\n* Unit Weight: 0.5 lbs\n* Material Price: $1.5/lb\n* Sales over 6 months: 50,000 / 2 = 25,000 units\n\n**1. Resell Value:**\n\n* **Assumption:**  Resold at 50% of the material price.\n* Recyclable Material (6 months): 25,000 units * 0.5 lbs/unit * 90% = 11,250 lbs\n* Resell Value: 11,250 lbs * $1.5/lb * 50% = **$8,437.50**\n\n**2. Recycling Revenue:**\n\n* **Assumption:** Recycling revenue is 30% of the material price.\n* Recycling Revenue: 11,250 lbs * $1.5/lb * 30% = **$5,062.50**\n\n\n**3. Manufacturing Cost Reduction:**\n\n* **Assumption:** Reusing recycled material reduces manufacturing cost by 20% of the original material cost for the reused portion.\n* Reused Material (6 months):  11,250 lbs *  90% (recyclability) = 10,125 lbs (This assumes all recycled material is reusable)\n* Manufacturing Cost Reduction: 10,125 lbs * $1.5/lb * 20% = **$3,037.50**\n\n\n**4. Waste Disposal Cost Avoidance:**\n\n* **Assumption:** Disposal cost is $0.10 per lb.\n* Non-Recyclable Material (6 months): 25,000 units * 0.5 lbs/unit * (1-90%) = 1,250 lbs\n* Waste Disposal Cost Avoidance: 1,250 lbs * $0.10/lb = **$125.00**\n\n\n**5. Best Recycling Methods:**\n\n* **Curbside Recycling:**  The most common and convenient method for consumers.  The e-"
+        },
+        {
+            "Product ID": "PLB002",
+            "Name": "Plastic Bottle",
+            "Recyclability (%)": 42.0,
+            "Yearly Sales": 80000,
+            "Weight (lbs)": 0.3,
+            "Price per Pound ($)": 0.9,
+            "AI Estimated Savings (6 Months) ($)": 2.0,
+            "Savings Percentage (%)": 0.02,
+            "AI Response": "## Plastic Bottle (PLB002) Recycling Savings Analysis (6 Months)\n\nHere's a breakdown of potential savings from optimizing recycling for the \"Plastic Bottle\" product over a 6-month period:\n\n**Assumptions:**\n\n* **Sales Volume (6 months):** 80,000 units/year * 0.5 = 40,000 units\n* **Recyclable Material Weight (6 months):** 40,000 units * 0.3 lbs/unit * 42% = 5,040 lbs\n* **Non-Recyclable Material Weight (6 months):** 40,000 units * 0.3 lbs/unit * (1-42%) = 6,960 lbs\n\n\n**1. Resell Value:**\n\n* **Scenario:**  Assume resold bottles (cleaned and sanitized) can fetch 20% of the original material cost.\n* **Calculation:** 5,040 lbs * $0.9/lb * 20% = $907.20\n* **Estimate:** $907.20\n\n\n**2. Recycling Revenue:**\n\n* **Scenario:** Assume a recycling facility pays $0.15 per pound for recycled PET plastic.\n* **Calculation:** 5,040 lbs * $0.15/lb = $756.00\n* **Estimate:** $756.00\n\n\n**3. Manufacturing Cost Reduction:**\n\n* **Scenario:** Assume using recycled PET plastic reduces material cost by 15% for the equivalent weight of new plastic.  \n* **Calculation:** 5,040 lbs * $0.9/lb * 15% = $680.40\n* **Estimate:** $680.40\n\n\n**4. Waste Disposal Cost Avoidance:**\n\n* **Scenario:** Assume waste disposal costs $0.05 per pound.\n* **Calculation:** 5,040 lbs * $0.05/lb = $252.00  (Savings from reduced landfill waste due to recycling)\n* **Estimate:** $252.00\n\n\n**5. Best Recycling Methods:**\n\n* **Source Separation:**  Encourage customers to separate plastic bottles from other waste. This improves the quality of recycled material and reduces contamination.  Partner with local recycling"
+        },
+        {
+            "Product ID": "CAR003",
+            "Name": "Cardboard Box",
+            "Recyclability (%)": 80.0,
+            "Yearly Sales": 30000,
+            "Weight (lbs)": 1.2,
+            "Price per Pound ($)": 0.6,
+            "AI Estimated Savings (6 Months) ($)": 3.0,
+            "Savings Percentage (%)": 0.03,
+            "AI Response": "## Cardboard Box (CAR003) Recycling Savings Estimate (6 Months)\n\nHere's a breakdown of the potential savings from optimizing cardboard box recycling over a 6-month period:\n\n**Assumptions:**\n\n* **Sales Volume (6 months):** 30,000 units/year * 0.5 = 15,000 units\n* **Recyclable Material (per unit):** 1.2 lbs * 80% = 0.96 lbs\n* **Total Recyclable Material (6 months):** 15,000 units * 0.96 lbs/unit = 14,400 lbs\n\n**1. Resell Value:**\n\n* **Scenario:**  Assume resold boxes (slightly damaged or returned) can fetch 25% of the original material cost.\n* **Calculation:** 14,400 lbs * $0.6/lb * 25% * 80% (recyclability rate) = $1,728\n\n**2. Recycling Revenue:**\n\n* **Scenario:** Assume a recycling facility pays $0.15 per pound for cardboard.\n* **Calculation:** 14,400 lbs * $0.15/lb = $2,160\n\n**3. Manufacturing Cost Reduction:**\n\n* **Scenario:** Assume reusing recycled cardboard reduces raw material needs by 10% for new boxes.  This translates to a 10% savings on the material cost for the portion of boxes made with recycled content.  We'll assume half the boxes produced in the next 6 months use some recycled content.\n* **Calculation:** 15,000 units * 0.5 (proportion using recycled content) * 1.2 lbs/unit * $0.6/lb * 10% = $540\n\n**4. Waste Disposal Cost Avoidance:**\n\n* **Scenario:** Assume disposal cost of $0.05 per pound for non-recycled cardboard.\n* **Calculation:** 14,400 lbs * $0.05/lb = $720\n\n**5. Best Recycling Methods:**\n\n* **Balers:** Compressing cardboard into bales significantly reduces storage space and transportation costs, making it more efficient for recycling facilities.\n* **Shredders:** Shredding cardboard can be useful for creating packaging material or animal bedding,"
+        },
+        {
+            "Product ID": "GLJ004",
+            "Name": "Glass Jar",
+            "Recyclability (%)": 70.0,
+            "Yearly Sales": 20000,
+            "Weight (lbs)": 1.5,
+            "Price per Pound ($)": 2.0,
+            "AI Estimated Savings (6 Months) ($)": 4.0,
+            "Savings Percentage (%)": 0.01,
+            "AI Response": "## Glass Jar (GLJ004) Recycling Savings Estimate (6 Months)\n\n**Product Data:**\n\n* Product ID: GLJ004\n* Recyclability Rate: 70%\n* Annual Sales: 20,000 units\n* Unit Weight: 1.5 lbs\n* Material Price per Pound: $2.0\n* Sales over 6 months: 20,000 / 2 = 10,000 units\n\n**1. Resell Value:**\n\n* **Assumption:** Resold at 50% of the original material cost.\n* Recyclable Material Weight (6 months): 10,000 units * 1.5 lbs/unit * 70% = 10,500 lbs\n* Resell Value: 10,500 lbs * $2.0/lb * 50% = $10,500\n\n**2. Recycling Revenue:**\n\n* **Assumption:** Recycling center pays $0.50 per pound for recycled glass.\n* Recycling Revenue: 10,500 lbs * $0.50/lb = $5,250\n\n**3. Manufacturing Cost Reduction:**\n\n* **Assumption:** 20% of the manufacturing cost can be saved by reusing recycled glass.\n* Material Cost for Recycled Material (6 months): 10,500 lbs * $2.0/lb = $21,000\n* Manufacturing Cost Reduction: $21,000 * 20% = $4,200\n\n**4. Waste Disposal Cost Avoidance:**\n\n* **Assumption:** Disposal cost is $0.20 per pound for non-recyclable waste.\n* Non-Recyclable Waste (6 months): 10,000 units * 1.5 lbs/unit * (1-70%) = 4,500 lbs\n* Waste Disposal Cost Avoidance: 4,500 lbs * $0.20/lb = $900\n\n**5. Best Recycling Methods:**\n\n* **Curbside Recycling:**  Partner with local municipalities to ensure efficient curbside pickup of glass jars.  This is convenient for customers and can increase recycling rates.\n* **Drop-off Centers:** Establish designated drop-off points for customers to return used glass jars."
+        },
+        {
+            "Product ID": "STE005",
+            "Name": "Steel Can",
+            "Recyclability (%)": 85.0,
+            "Yearly Sales": 40000,
+            "Weight (lbs)": 0.7,
+            "Price per Pound ($)": 1.8,
+            "AI Estimated Savings (6 Months) ($)": 5.0,
+            "Savings Percentage (%)": 0.02,
+            "AI Response": "## Steel Can (STE005) Recycling Savings Estimate (6 Months)\n\nHere's a breakdown of the potential savings from optimizing the recycling of Steel Can (STE005) over a 6-month period:\n\n**Assumptions:**\n\n* **Sales:** 40,000 units/year translates to 20,000 units over 6 months.\n* **Recyclable Material:** 85% of the steel can is recyclable.\n* **Non-Recyclable Material:** 15% of the steel can is considered waste.\n\n\n**1. Resell Value:**\n\n* **Scenario:**  Assume resold cans (perhaps slightly damaged returns) can fetch 50% of the original material cost.\n* **Calculation:** 20,000 units * 0.7 lbs/unit * 0.10 (estimated return rate) * $1.8/lb * 0.50 = $1260\n* **Estimated Savings:** $1260\n\n\n**2. Recycling Revenue:**\n\n* **Recyclable Weight:** 20,000 units * 0.7 lbs/unit * 0.85 = 11,900 lbs\n* **Scenario:** Assume recycled steel fetches $0.50/lb.  (This can vary significantly based on market conditions.)\n* **Calculation:** 11,900 lbs * $0.50/lb = $5950\n* **Estimated Savings:** $5950\n\n\n**3. Manufacturing Cost Reduction:**\n\n* **Scenario:** Assume using recycled steel reduces manufacturing costs by 20% of the material cost for the portion of recycled material used.\n* **Recycled Material Used:** Assume 50% of the new production utilizes recycled steel. This is a conservative estimate and could be higher.\n* **Calculation:** 20,000 units * 0.7 lbs/unit * 0.50 (proportion of recycled material used) * $1.8/lb * 0.20 = $1260\n* **Estimated Savings:** $1260\n\n\n**4. Waste Disposal Cost Avoidance:**\n\n* **Non-Recyclable Weight:** 20,000 units * 0.7 lbs/unit * 0.15 = 2100 lbs\n* **Scenario"
+        }
+    ]
+}
