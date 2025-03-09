@@ -5,7 +5,7 @@ import time
 import re
 
 # Configure AI Model (Use the latest working model)
-genai.configure(api_key="AIzaSyDAPW9X8Sp6Si6Um0fW7INNkpdvdPc88ps")
+genai.configure(api_key="GEMINI_API_KEY")
 
 # Define Paths
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -65,20 +65,22 @@ def estimate_savings_with_ai(return_data):
         print(f"Original Cost (6 Months): ${original_cost / 2:.2f}")
         time.sleep(1)
         
-        # Construct AI prompt dynamically with structured savings categories
+        # Construct AI prompt dynamically with improved structured savings categories
         prompt = f"""
-        An e-commerce platform wants to estimate its savings over the next 6 months by optimizing recycling.
-        The product "{name}" (ID: {product_id}) has a recyclability rate of {recyclability_percentage}%.
+        The e-commerce platform is evaluating cost savings opportunities over the next 6 months by optimizing recycling and material reuse.
+        The product "{name}" (ID: {product_id}) has a recyclability rate of {recyclability_percentage}%. 
         It is sold {yearly_sales} times per year, each unit weighs {weight} lbs, and the material price per pound is ${price_per_pound}.
         
         Please analyze and provide structured savings estimates based on:
-        1. **Resell Value** - If the product or materials can be resold at a discounted rate.
-        2. **Recycling Revenue** - Expected income from recycling the materials.
-        3. **Manufacturing Cost Reduction** - How much can be saved by reusing materials.
-        4. **Waste Disposal Cost Avoidance** - Savings from not having to dispose of non-recyclable waste.
-        5. **Best Recycling Methods** - Recommend the most effective recycling techniques for this product.
         
-        Provide the total estimated savings in USD and a brief breakdown of these categories.
+        **1. Resell Value** - Estimate potential revenue from reselling returned or lightly used items.
+        **2. Recycling Revenue** - Expected income from recycling the materials (including common recycling market prices).
+        **3. Manufacturing Cost Reduction** - Savings from using recycled materials in new production instead of raw materials.
+        **4. Waste Disposal Cost Avoidance** - Estimated savings from reducing landfill and disposal fees.
+        **5. Operational Efficiency** - Cost reduction from improving logistics, storage, and sorting of returned items.
+        **6. Best Recycling Methods** - Recommend the most effective recycling techniques for this product, including industrial or at-home recycling solutions.
+        
+        Provide the total estimated savings in USD and a category-wise breakdown for better insights.
         """
 
         # Call AI Model
